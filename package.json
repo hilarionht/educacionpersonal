@@ -1,6 +1,6 @@
 {
-    "name": "ng2angle",
-    "version": "0.0.0",
+    "name": "gestionpersonal",
+    "version": "0.0.1",
     "license": "MIT",
     "scripts": {
         "ng": "ng",

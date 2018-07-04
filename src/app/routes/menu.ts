@@ -24,6 +24,21 @@ const Dashboard = {
         }
     ]
 };
+const Personas = {
+    text: 'Empleados',
+    link: '/persona',
+    icon: 'icon-speedometer',
+    submenu: [
+        {
+            text: 'Empleados',
+            link: '/personal/personalist'
+        },
+        {
+            text: 'Instituciones',
+            link: '/Personal/institiciones'
+        }
+    ]
+};
 const Producto = {
     text: 'Productos',
     link: '/client',
@@ -442,7 +457,6 @@ const headingMore = {
 export const menu = [
     headingMain,
     Home,
-    Ventas,
-    Producto,
+    Personas,
     Usuario
 ];
