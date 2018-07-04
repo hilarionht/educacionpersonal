@@ -1,0 +1,47 @@
+<div class="card">
+    <div class="card-header">
+        Alta de Usuario
+    </div>
+    <div class="card-body">
+
+        <form #userForm="ngForm" (ngSubmit)="addUser(userForm)">
+            <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="usuario._id">
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault01">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" #name="ngModel" [(ngModel)]="usuario.nombre" placeholder="Nombre Completo" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault02">Apellido</label>
+                    <input type="text" class="form-control" name="apellido" #name="ngModel" [(ngModel)]="usuario.apellido" placeholder="Apellido" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefaultUsername">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend2"><i class="fa fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" name="username" #name="ngModel" [(ngModel)]="usuario.username" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault03">Password</label>
+                    <input type="text" class="form-control" name="password" #name="ngModel" [(ngModel)]="usuario.password" placeholder="City" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault04">Estado</label>
+                    <input type="text" class="form-control" name="estado" #name="ngModel" [(ngModel)]="usuario.estado" placeholder="estado" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault05">Rol</label>
+                    <input type="text" class="form-control" name="role" #name="ngModel" [(ngModel)]="usuario.role" placeholder="rol" required>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Guardar</button>
+        </form>
+
+
+    </div>
+</div>
